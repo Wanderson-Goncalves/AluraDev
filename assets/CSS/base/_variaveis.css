@@ -1,5 +1,9 @@
 :root {
-
+    --cor-preta: #141414;
+    --cor-botao: #5081FB;
+    --cor-botao-hover: #7BA4FC;
+    --cor-botao-pressed: #7BA4FC;
+    --cor-botao-focus: #96B9FD;
     --cor-de-fundo: #051D3B;
     --branco: #fff;
     --cor-input: rgba(255, 255, 255, 0.16);

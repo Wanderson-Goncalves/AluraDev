@@ -19,9 +19,9 @@
 <body>
     <header class="cabecalho">
         <img src="assets/img/Logo.svg" alt="Logo ALURADEV" class="logo">
-       
+
         <input type="search" name="" id="" class="pesquisa" placeholder="Busque por algo" aria-label="Busque por algo">
-       
+
         <div class="autor">
             <img src="assets/img/foto.svg" alt="" class="autor__foto">
             <h2 class="autor__nome">Harry</h2>
@@ -30,7 +30,76 @@
     </header>
 
     <main class="conteudo">
-        <h1>conteudo</h1>
+        <section class="menu">
+            <h2 class="menu__titulo">MENU</h2>
+            <a href="#" class="menu__link">
+                <img class="menu__icone" src="assets/img/Icone-editor.svg" alt="">
+                <h4>Editor de código</h4>
+            </a>
+            <a href="#" class="menu__link">
+                <img class="menu__icone" src="assets/img/Icone-menu.svg" alt="">
+                <h4>Comunidade</h4>
+            </a>
+        </section>
+
+        <section class="area-codigo">
+           <div class="area-codigo__painel">
+                <textarea class="area-codigo__painel--codigo">
+                    const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+                    const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+                    const unfold = (f, seed) => {
+                            const go = (f, seed, acc) => {
+                                const res = f(seed)
+                                return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                            }
+                            return go(f, seed, [])
+                    4-
+                 ç
+                56?
+                </textarea>
+            </div>             
+
+            
+            <input type="button" class="botao-highlight" value="Visualizar com o highlight">
+        </section>
+
+        <section class="projeto">
+            <form action="" class="projeto__formulario">
+
+                <fieldset>
+                    <legend class="projeto__legenda">Seu projeto</legend>
+                    <div class="projeto__personalizacao">
+                        <input type="text" class="projeto__input projeto__personalizacao--nome"
+                            placeholder="Nome do seu projeto">
+                        <input type="text" class="projeto__input projeto__personalizacao--label" placeholder="Label">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="projeto__legenda">Personalização</legend>
+
+                    <div class="projeto__personalizacao">
+
+                        <select name="selecao" class="selecao" id="">
+                            <option value="Java" class="selecao__linguagem">Java</option>
+                            <option value="JavaScript" class="selecao__linguagem">JavaScript</option>
+                            <option value="C#" class="selecao__linguagem">C#</option>
+                            <option value="C++" class="selecao__linguagem">C++</option>
+                            <option value="C" class="selecao__linguagem">C</option>
+                            <option value="PHP" class="selecao__linguagem">PHP</option>
+                            <option value="Phyton" class="selecao__linguagem">Phyton</option>
+
+                        </select>
+                        <input type="color" name="" class="projeto__input" id="">
+                    </div>
+                </fieldset>
+
+                <input type="submit" class="projeto__botao-salvar" value="Salvar projeto">
+            </form>
+
+        </section>
     </main>
 
 

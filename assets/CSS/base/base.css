@@ -1,6 +1,12 @@
 @import url(_reset.css);
 @import url(_variaveis.css);
 @import url(../_cabecalho.css);
+@import url(../conteudo/_menu.css);
+@import url(../conteudo/_formulario.css);
+@import url(../conteudo/_areCodigo.css);
+
+
+
 
 body {
     background: var(--cor-de-fundo);
@@ -19,7 +25,12 @@ body {
 
 
 .conteudo {
-    background-color: chartreuse;
+    display: grid;
     grid-area: conteudo;
-
+    grid-template-areas: "menu painel formulario";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 0.5rem;
 }

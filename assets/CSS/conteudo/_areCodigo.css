@@ -1,0 +1,20 @@
+.area-codigo{
+    grid-area: painel;
+    
+}
+.area-codigo__painel{
+   
+    background-color: var(--cor-botao-focus);
+    border-radius: 0.5rem;
+    
+    padding: 2rem;
+}
+.area-codigo__painel--codigo{
+    background-color: var(--cor-preta);
+    border-radius: 0.5rem;
+    color: var(--branco);
+    height: 302px;
+    width: 688px;
+    padding: 1rem;
+
+}
