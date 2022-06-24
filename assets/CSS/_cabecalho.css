@@ -1,0 +1,45 @@
+.cabecalho {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    grid-area: cabecalho;
+    padding-bottom: 2rem;
+}
+
+
+.pesquisa {
+    background: var(--cor-input);
+    border-radius: 0.5rem;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    width: 752px;
+    height: 4rem;
+    padding: 0 14px;
+}
+
+.pesquisa::placeholder {
+    color: var(--branco);
+    font-family: inherit;
+    font-size: inherit;
+
+}
+
+.autor {
+    border-radius: 0.5rem;
+    display: flex;
+    padding: 12px;
+}
+
+.autor:hover {
+    background: var(--cor-input-houver);
+
+}
+
+.autor__foto {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+}
