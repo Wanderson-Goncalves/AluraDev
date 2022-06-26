@@ -54,10 +54,7 @@
                                 const res = f(seed)
                                 return res ? go(f, res[1], acc.concat([res[0]])) : acc
                             }
-                            return go(f, seed, [])
-                    4-
-                 ç
-                56?
+                        
                 </textarea>
             </div>             
 
@@ -71,9 +68,9 @@
                 <fieldset>
                     <legend class="projeto__legenda">Seu projeto</legend>
                     <div class="projeto__personalizacao">
-                        <input type="text" class="projeto__input projeto__personalizacao--nome"
+                        <input type="text" class="projeto__input"
                             placeholder="Nome do seu projeto">
-                        <input type="text" class="projeto__input projeto__personalizacao--label" placeholder="Label">
+                        <input type="text" class="projeto__input" placeholder="Label">
                     </div>
                 </fieldset>
 
@@ -82,7 +79,7 @@
 
                     <div class="projeto__personalizacao">
 
-                        <select name="selecao" class="selecao" id="">
+                        <select name="selecao" class="projeto__input" id="">
                             <option value="Java" class="selecao__linguagem">Java</option>
                             <option value="JavaScript" class="selecao__linguagem">JavaScript</option>
                             <option value="C#" class="selecao__linguagem">C#</option>
@@ -96,7 +93,7 @@
                     </div>
                 </fieldset>
 
-                <input type="submit" class="projeto__botao-salvar" value="Salvar projeto">
+                <input type="submit" class="projeto__input botao__salvar" value="Salvar projeto">
             </form>
 
         </section>

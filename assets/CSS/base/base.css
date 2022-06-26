@@ -9,9 +9,11 @@
 
 
 body {
+
+
     background: var(--cor-de-fundo);
-    font-family: var(--cor-de-fundo);
-    font-size: var(--fonte-principal);
+    font-family: var(--fonte-principal);
+    font-size: var(--tamanho-fonte);
     font-weight: var(--peso-principal);
     line-height: 1.5rem;
     color: var(--branco);
@@ -20,16 +22,22 @@ body {
         "conteudo";
     grid-template-columns: auto;
     grid-template-rows: auto;
-    margin: 2rem;
+    padding:  2rem;
+}
+
+.cabecalho {
+    align-items: center;
+  
+    display: flex;
+    justify-content: space-between;
+    grid-area: cabecalho;
+    padding-bottom: 2rem;
 }
 
 
 .conteudo {
-    display: grid;
-    grid-area: conteudo;
-    grid-template-areas: "menu painel formulario";
-    grid-template-columns: auto;
-    grid-template-rows: auto;
+    
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 0.5rem;

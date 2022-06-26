@@ -5,9 +5,16 @@
     --cor-botao-pressed: #7BA4FC;
     --cor-botao-focus: #96B9FD;
     --cor-de-fundo: #051D3B;
+    --cor-texto-botao: #051D3B;
+
+    --cor-segundo-botao:#0B254A;
+    --cor-segundo-botao-hover: #112D5A;
+
     --branco: #fff;
     --cor-input: rgba(255, 255, 255, 0.16);
-    --cor-input-houver: rgba(255, 255, 255, 0.24);
+    --cor-input-hover: rgba(255, 255, 255, 0.24);
+    --sombra: 0px 16px 24px rgba(0, 0, 0, 0.24);
+
     --fonte-principal: 'Inter', sans-serif;
     --fonte-card: 'Roboto Mono', monospace;
 
@@ -15,6 +22,6 @@
     --peso-titulo: 700;
 
 
-    --tamanho-corpo: 1rem;
-    --tamanho-card: 0.875;
+    --tamanho-fonte: 1rem;
+    --tamanho-fonte-card: 0.875;
 }

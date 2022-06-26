@@ -1,6 +1,4 @@
-.projeto{
-    grid-area: formulario;
-}
+
 .projeto__personalizacao {
     display: flex;
     flex-direction: column;
@@ -16,31 +14,27 @@
     color: var(--branco);
     padding-bottom: 1rem;
 }
-
-.projeto__input, .selecao, .projeto__botao-salvar{
-    color: inherit;
+.projeto__input{
+    color: var(--branco);
+    box-sizing: border-box;
+    background-color: var(--cor-input);
+    border-radius: 0.5rem;
     font-family: inherit;
     font-size: inherit;
-    background-color: var(--cor-input);
-    border-radius: 8px;
-    border: none;
+    font-weight: inherit;
+    width: 272px;
     height: 56px;
-    width: 254px;
-    padding: 0 14px;
+    padding: 0 0.875rem;
+    border: none;
 }
 .projeto__input:hover{
-    background-color: var( --cor-input-houver);
+    background-color: var(--cor-input-hove);
 }
-.selecao__linguagem{
-    color: lightslategray;    
-}
-.projeto__botao-salvar{
+.botao__salvar{
     background-color: var(--cor-botao);
+    color: var(--cor-texto-botao);
 }
-.projeto__botao-salvar:hover{
+.botao__salvar:hover{
     background-color: var(--cor-botao-hover);
-}
-.projeto__botao-salvar:focus{
-    background-color: var(--cor-botao-focus);
 }
 
