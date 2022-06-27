@@ -15,17 +15,17 @@
     padding-bottom: 1rem;
 }
 .projeto__input{
-    color: var(--branco);
-    box-sizing: border-box;
     background-color: var(--cor-input);
+    border: none;
     border-radius: 0.5rem;
+    box-sizing: border-box;
+    color: var(--branco);
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
-    width: 272px;
     height: 56px;
     padding: 0 0.875rem;
-    border: none;
+    width: 272px;
 }
 .projeto__input:hover{
     background-color: var(--cor-input-hove);

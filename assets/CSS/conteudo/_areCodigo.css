@@ -1,13 +1,15 @@
-.area-codigo{
+.area-codigo {
     text-align: center;
     margin-left: 6.25rem;
+
 }
+
 .area-codigo__painel {
-width: 752px;
-box-sizing: border-box;
     background-color: var(--cor-botao-focus);
     border-radius: 0.5rem;
+    box-sizing: border-box;
     padding: 2rem;
+    width: 752px;
 }
 
 .area-codigo__painel--codigo {
@@ -18,23 +20,25 @@ box-sizing: border-box;
     font-size: var(--tamanho-fonte-card);
     line-height: 1.154rem;
     height: 302px;
-    width: 624px;
-    padding: 1rem;
     resize: none;
+    padding: 1rem;
+    width: 624px;
 
 }
-.botao-highlight{
+
+.botao-highlight {
     background: var(--cor-segundo-botao);
-    width: 752px;
-    height: 56px;
-    border-radius: 0.5rem;
     border: none;
-    margin-top: 2rem;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
+    border-radius: 0.5rem;
     color: var(--branco);
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    height: 56px;
+    margin-top: 2rem;
+    width: 752px;
 }
-.botao-highlight:hover{
+
+.botao-highlight:hover {
     background-color: var(--cor-segundo-botao-hover);
 }

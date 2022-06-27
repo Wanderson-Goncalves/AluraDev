@@ -1,18 +1,17 @@
-.menu{
-   
-}
-.menu__titulo{
+.menu {}
+
+.menu__titulo {
     padding-bottom: 1rem;
 }
-.menu__link{
-   display: flex;
-   align-items: center;
-   padding-bottom: 1rem;
+
+.menu__link {
+    align-items: center;
+    display: flex;
+    padding-bottom: 1rem;
 }
 
-.menu__icone{
-
-    width: 3rem;
+.menu__icone {
     height: 3rem;
     padding-right: 1rem;
+    width: 3rem;
 }

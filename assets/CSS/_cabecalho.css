@@ -1,31 +1,27 @@
-
-
 .pesquisa {
     background: var(--cor-input);
+    border: none;
     border-radius: 0.5rem;
     color: inherit;
     font-family: inherit;
     font-size: inherit;
-    border: none;
-    width: 752px;
-
     height: 3.5rem;
     padding: 0 14px;
+    width: 752px;
 }
 
 .pesquisa::placeholder {
     color: var(--branco);
     font-family: inherit;
     font-size: inherit;
-
 }
 
 .autor {
-    justify-content: center;
-    width: 106px;
     border-radius: 0.5rem;
     display: flex;
+    justify-content: center;
     padding: 12px;
+    width: 106px;
 }
 
 .autor:hover {
@@ -34,7 +30,7 @@
 }
 
 .autor__foto {
-    width: 2rem;
     height: 2rem;
     margin-right: 0.5rem;
+    width: 2rem;
 }
