@@ -5,24 +5,40 @@
 }
 
 .area-codigo__painel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--cor-botao-focus);
     border-radius: 0.5rem;
     box-sizing: border-box;
     padding: 2rem;
-    width: 752px;
+    
+}
+
+.area-codigo__painel-elipses {
+
+    box-sizing: border-box;
+    background: url(../../img/mac_buttons.svg) 16px no-repeat var(--cor-preta);
+    border: none;
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 1rem;
+    width: 685px;
+
 }
 
 .area-codigo__painel--codigo {
+    box-sizing: border-box;
     background-color: var(--cor-preta);
-    border-radius: 0.5rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+    border: none;
     color: var(--branco);
     font-family: var(--fonte-card);
     font-size: var(--tamanho-fonte-card);
     line-height: 1.154rem;
-    height: 302px;
+    height: 274px;
     resize: none;
     padding: 1rem;
-    width: 624px;
+    width: 685px;
 
 }
 
@@ -41,4 +57,30 @@
 
 .botao-highlight:hover {
     background-color: var(--cor-segundo-botao-hover);
+}
+
+@media(max-width: 768px){
+    .area-codigo {
+       
+        margin: 0;
+    
+    }
+    .area-codigo__painel-elipses {
+
+        
+        width: 640px;
+    
+    }
+    
+    .area-codigo__painel--codigo {
+      
+        height: 274px;        
+        width: 640px;
+    
+    }
+    .botao-highlight {
+        width: 704px;
+    }
+    
+
 }

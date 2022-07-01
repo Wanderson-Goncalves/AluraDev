@@ -1,4 +1,4 @@
-.menu {}
+
 
 .menu__titulo {
     padding-bottom: 1rem;
@@ -14,4 +14,9 @@
     height: 3rem;
     padding-right: 1rem;
     width: 3rem;
+}
+@media(max-width: 768px) {
+    .menu {
+        display: none;
+    }
 }

@@ -1,27 +1,33 @@
 :root {
-    --cor-preta: #141414;
-    --cor-botao: #5081FB;
-    --cor-botao-hover: #7BA4FC;
-    --cor-botao-pressed: #7BA4FC;
-    --cor-botao-focus: #96B9FD;
-    --cor-de-fundo: #051D3B;
-    --cor-texto-botao: #051D3B;
-
-    --cor-segundo-botao:#0B254A;
-    --cor-segundo-botao-hover: #112D5A;
-
     --branco: #fff;
-    --cor-input: rgba(255, 255, 255, 0.16);
-    --cor-input-hover: rgba(255, 255, 255, 0.24);
-    --sombra: 0px 16px 24px rgba(0, 0, 0, 0.24);
-
+    --cor-de-fundo: #051D3B;
+    --cor-preta: #141414;
     --fonte-principal: 'Inter', sans-serif;
-    --fonte-card: 'Roboto Mono', monospace;
-
     --peso-principal: 400;
     --peso-titulo: 700;
-
-
     --tamanho-fonte: 1rem;
+
+    /*----BOTÕES----*/
+
+    /*-Filled-*/
+
+    --cor-botao: #5081FB;
+    --cor-botao-hover: #7BA4FC;
+    --cor-stroke-pressed: #3B65C5;
+    --cor-botao-focus: #96B9FD;
+    
+    --cor-texto-botao: #051D3B;
+
+    /*Outlined*/
+    --cor-segundo-botao:#0B254A;/*serve para hover icon button */
+    --cor-segundo-botao-hover: #112D5A;/*serve para pressed icon button*/
+    --cor-segundo-botao-focus: #173569; /*utiliza-se também para stroke*/
+
+    --cor-input: rgba(255, 255, 255, 0.16);
+    --cor-input-hover: rgba(255, 255, 255, 0.24);
+
+    --sombra: 0px 16px 24px rgba(0, 0, 0, 0.24);
+
+    --fonte-card: 'Roboto Mono', monospace;   
     --tamanho-fonte-card: 0.875;
 }

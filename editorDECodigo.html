@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +22,7 @@
 
         <input type="search" name="" id="" class="pesquisa" placeholder="Busque por algo" aria-label="Busque por algo">
 
+        <button class="menu-humburgue"></button>
         <div class="autor">
             <img src="assets/img/foto.svg" alt="" class="autor__foto">
             <h2 class="autor__nome">Harry</h2>
@@ -43,43 +44,33 @@
         </section>
 
         <section class="area-codigo">
-           <div class="area-codigo__painel">
-                <textarea class="area-codigo__painel--codigo">
-                    const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
-                    const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+            <div class="area-codigo__painel">
+                <div class="area-codigo__painel-elipses"></div>
+                <textarea class="area-codigo__painel--codigo" placeholder=""></textarea>                
+            </div>
 
-                    const unfold = (f, seed) => {
-                            const go = (f, seed, acc) => {
-                                const res = f(seed)
-                                return res ? go(f, res[1], acc.concat([res[0]])) : acc
-                            }
-                        
-                </textarea>
-            </div>             
 
-            
             <input type="button" class="botao-highlight" value="Visualizar com o highlight">
         </section>
 
         <section class="projeto">
             <form action="" class="projeto__formulario">
 
-                <fieldset>
+                <fieldset class="sobre">
                     <legend class="projeto__legenda">Seu projeto</legend>
                     <div class="projeto__personalizacao">
-                        <input type="text" class="projeto__input"
-                            placeholder="Nome do seu projeto">
+                        <input type="text" class="projeto__input" placeholder="Nome do seu projeto">
                         <input type="text" class="projeto__input" placeholder="Label">
                     </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="sobre">
                     <legend class="projeto__legenda">Personalização</legend>
 
-                    <div class="projeto__personalizacao">
+                    <div class="projeto__personalizacao projeto__tema">
 
-                        <select name="selecao" class="projeto__input" id="">
+                        <select name="selecao" class="projeto__input tema" id="">
                             <option value="Java" class="selecao__linguagem">Java</option>
                             <option value="JavaScript" class="selecao__linguagem">JavaScript</option>
                             <option value="C#" class="selecao__linguagem">C#</option>
@@ -89,7 +80,7 @@
                             <option value="Phyton" class="selecao__linguagem">Phyton</option>
 
                         </select>
-                        <input type="color" name="" class="projeto__input" id="">
+                        <input type="color" name="" class="projeto__input tema" id="">
                     </div>
                 </fieldset>
 

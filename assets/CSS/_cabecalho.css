@@ -16,6 +16,10 @@
     font-size: inherit;
 }
 
+.menu-humburgue {
+    display: none;
+}
+
 .autor {
     border-radius: 0.5rem;
     display: flex;
@@ -33,4 +37,35 @@
     height: 2rem;
     margin-right: 0.5rem;
     width: 2rem;
+}
+
+@media(max-width: 768px) {
+    .logo{
+        height: 34.05px;
+        width: 145px;
+    }
+
+    .autor {
+        display: none;
+    }
+
+    .pesquisa {
+        width: 431px;
+    }
+
+    .menu-humburgue {
+        background-color: transparent;
+        background-image: url(../img/menu-humburguer.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        border: none;
+        border-radius: 1rem;
+        display: inline-block;
+        height: 48px;
+        width: 48px;
+    }
+    .menu-humburgue:hover{
+        background-color: var(--cor-segundo-botao);
+    }
+    
 }

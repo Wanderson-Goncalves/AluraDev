@@ -28,7 +28,7 @@
     width: 272px;
 }
 .projeto__input:hover{
-    background-color: var(--cor-input-hove);
+    background-color: var(--cor-input-hover);
 }
 .botao__salvar{
     background-color: var(--cor-botao);
@@ -36,5 +36,27 @@
 }
 .botao__salvar:hover{
     background-color: var(--cor-botao-hover);
+}
+
+@media(max-width: 768px){
+    .projeto{
+        margin-top: 40px;
+    }
+    .sobre{
+        display: flex;
+    }
+    .projeto__tema{
+        display: flex;
+        flex-direction: row;
+    }
+    .projeto__input{
+        width: 704px;
+    }
+    .tema{
+        width: 344px;
+    }
+
+
+
 }
 
