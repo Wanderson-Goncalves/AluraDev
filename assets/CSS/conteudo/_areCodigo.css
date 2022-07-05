@@ -12,7 +12,7 @@
     border-radius: 0.5rem;
     box-sizing: border-box;
     padding: 2rem;
-    
+
 }
 
 .area-codigo__painel-elipses {
@@ -36,8 +36,9 @@
     font-size: var(--tamanho-fonte-card);
     line-height: 1.154rem;
     height: 274px;
-    resize: none;
+    outline: 0;
     padding: 1rem;
+    resize: none;
     width: 685px;
 
 }
@@ -59,28 +60,53 @@
     background-color: var(--cor-segundo-botao-hover);
 }
 
-@media(max-width: 768px){
+@media screen and (max-width: 768px) {
     .area-codigo {
-       
+
         margin: 0;
-    
+
     }
+
     .area-codigo__painel-elipses {
 
-        
+
         width: 640px;
-    
+
     }
-    
+
     .area-codigo__painel--codigo {
-      
-        height: 274px;        
+
+        height: 274px;
         width: 640px;
-    
+
     }
+
     .botao-highlight {
         width: 704px;
     }
-    
+
+
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .area-codigo__painel-elipses {
+
+
+        width: 279px;
+
+    }
+
+    .area-codigo__painel--codigo {
+
+        height: 428px;
+        width: 279px;
+
+    }
+
+    .botao-highlight {
+        width: 343px;
+    }
 
 }
